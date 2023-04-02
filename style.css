@@ -1,44 +1,70 @@
-*{box-sizing: border-box;}
-h1{font-size: 3.5em;}
-h2{font-size: 2.7em;}
-h3{font-size: 2em;}
-p{font-size: 1.25em;}
-ul{list-style: none;}
-li{font-size: 1.25em;}
-body{margin: 0;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+* {
+    box-sizing: border-box;
 }
 
-html{scroll-behavior: smooth;}
-button{
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
     font-size: 2em;
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 10px;
-    border: 1px solid rgba(0,0,0,0.5);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     color: white;
     background-color: blueviolet;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(102, 42, 158);
 }
 
-.container{
+.container {
     max-width: 1400px;
     margin: auto;
 }
 
-.coloracento{
+.coloracento {
     color: blueviolet;
 }
 
-header{
-    background-color: rgb(245,245,245);
+header {
+    background-color: rgb(245, 245, 245);
 }
-header .logo{
-    margin:0;
+
+header .logo {
+    margin: 0;
     padding: 25px 30px;
     font-weight: bold;
     color: blueviolet;
@@ -46,36 +72,36 @@ header .logo{
 
 }
 
-header .container{
+header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header nav{
+header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 25px;
 }
 
-header a{
+header a {
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
-    color:black;
+    color: black;
 }
 
-header a:hover{
+header a:hover {
     color: blueviolet;
 }
 
-a .logo{
+a .logo {
     color: blueviolet;
 }
 
 
-#hero{
+#hero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,115 +109,103 @@ a .logo{
     flex-direction: column;
     height: 90vh;
     color: white;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ) 
-    ,url("media/hero.jpg");
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("media/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-#hero h1{
-    color:white;
+#hero h1 {
+    color: white;
 }
 
-#hero button{
+#hero button {
     font-size: 1.75em;
 }
 
 
 
-#somosproya .container{
+#somosproya .container {
     text-align: center;
-    padding: 200px 12px;    
+    padding: 200px 12px;
 }
 
-#nuestros-programas{
-    background-color: rgb(30,30,30);
-    color:white;
+
+#somosproya .img-container {
+    background-image: url("media/somos-proya.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 400px;
+}
+
+#nuestros-programas {
+    background-color: rgb(30, 30, 30);
+    color: white;
     text-align: center;
 }
 
-#nuestros-programas .container{
+#nuestros-programas .container {
     padding: 150px 12px;
 }
 
-#nuestros-programas .p{
+#nuestros-programas .p {
     display: none;
 }
 
-#nuestros-programas .h2{
+#nuestros-programas .h2 {
     margin-top: 0;
     font-size: 3em;
 }
 
-.carta:nth-child(1){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ) 
-    ,url("media/uvas.jpg");
+.carta:nth-child(1) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("media/uvas.jpg");
 }
 
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ) 
-    ,url("media/front-end.jpg");
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("media/front-end.jpg");
 }
 
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ) 
-    ,url("media/full-stack.jpg");
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("media/full-stack.jpg");
 
 }
 
-.carta:nth-child(4){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ) 
-    ,url("media/front-end.jpg");
+.carta:nth-child(4) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("media/front-end.jpg");
 
 }
 
-.carta:nth-child(5){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ) 
-    ,url("media/python.jpg");
+.carta:nth-child(5) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("media/python.jpg");
 
 }
 
 
 
 
-.carta:nth-child(6){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ) 
-    ,url("media/voluntariado.jpg");
+.carta:nth-child(6) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("media/voluntariado.jpg");
 
 }
 
 
 
-#nuestros-programas .carta{
+#nuestros-programas .carta {
     background-position: center center;
     background-size: cover;
     padding: 50px 0px;
@@ -199,18 +213,18 @@ a .logo{
     border-radius: 15px;
 }
 
-#caracteristicas .container{
+#caracteristicas .container {
     text-align: center;
     padding: 200px 12px;
 
 }
 
-#caracteristicas li{
+#caracteristicas li {
     margin: 16px 0px;
     font-weight: bold;
 }
 
-#academia .img-container{
+#academia .img-container {
 
     height: 90vh;
     background-image: url("media/academia.jpg");
@@ -221,70 +235,71 @@ a .logo{
 
 #academia {
     width: 100%;
-    overflow-x:scroll;
+    overflow-x: scroll;
 }
 
-#final{
+#final {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(30,30,30);
-    color:white;
+    background-color: rgb(30, 30, 30);
+    color: white;
     height: 80vh;
 }
 
-#final h2{
+#final h2 {
     font-size: 9vw;
 }
 
-footer{
-    background-color: rgb(230,230,230);
+footer {
+    background-color: rgb(230, 230, 230);
 }
 
-footer p{
+footer p {
     margin: 0;
     padding: 12px;
     color: rgb(100, 100, 100);
 }
 
-footer .container{
+footer .container {
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
-@media (min-width: 720px){
-    header{
+@media (min-width: 720px) {
+    header {
         position: fixed;
         width: 100%;
     }
 
-    header .container{
+    header .container {
         flex-direction: row;
         justify-content: space-between;
     }
-    header nav{
+
+    header nav {
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 20px;
     }
 
-    #hero h1{
+    #hero h1 {
         font-size: 3em;
     }
 
-    #somosproya .container{
-        display:flex;
+    #somosproya .container {
+        display: flex;
         justify-content: space-evenly;
     }
 
-    #somosproya .h2{
+    #somosproya .h2 {
         margin-top: 0px;
     }
 
-    #somosproya .texto{
+    #somosproya .texto {
         width: 50%;
         text-align: initial;
         display: flex;
@@ -293,62 +308,62 @@ footer .container{
     }
 
 
-    #somosproya .img-container{
+    #somosproya .img-container {
         background-image: url("media/somos-proya.jpg");
-            background-size: cover;
-            background-position: center center;
-            height: 400px;
-            width: 400px;
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 400px;
     }
 
-    #nuestros-programas .programas{
+    #nuestros-programas .programas {
         display: flex;
-        justify-content:center;
+        justify-content: center;
         flex-wrap: wrap;
 
     }
 
-    #nuestros-programas .p{
+    #nuestros-programas .p {
         display: block;
         margin-bottom: 30px;
     }
 
-    #nuestros-programas .carta{
-        flex:1 0 21%;
+    #nuestros-programas .carta {
+        flex: 1 0 21%;
         max-width: 21%;
         padding: 15px;
     }
 
-    #nuestros-programas .h3{
+    #nuestros-programas .h3 {
         margin-top: 0;
     }
 
-    #caracteristicas{
+    #caracteristicas {
         background-image: url("media/background-2.jpeg");
         background-repeat: no-repeat;
         background-size: 500px 400px;
         background-position: calc(100vw - 500px) 120px;
     }
 
-    #caracteristicas .container{
+    #caracteristicas .container {
         text-align: initial;
     }
 
-    #caracteristicas ul{
+    #caracteristicas ul {
         margin-left: 100px;
     }
 
-    #final h2{
+    #final h2 {
         font-size: 5em;
     }
 
-    footer .container{
+    footer .container {
         justify-content: flex-end;
     }
 }
 
 @media (min-width: 1200px) {
-    #caracteristicas{
+    #caracteristicas {
         background-position-x: calc(100vw - 800px);
     }
 }
