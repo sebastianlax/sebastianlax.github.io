@@ -152,7 +152,7 @@ a .logo{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-    ,url("media/front-end.jpg");
+    ,url("media/full-stack.jpg");
 
 }
 
@@ -162,7 +162,7 @@ a .logo{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-    ,url("media/python.jpg");
+    ,url("media/front-end.jpg");
 
 }
 
@@ -172,9 +172,11 @@ a .logo{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-    ,url("media/full-stack.jpg");
+    ,url("media/python.jpg");
 
 }
+
+
 
 
 .carta:nth-child(6){
